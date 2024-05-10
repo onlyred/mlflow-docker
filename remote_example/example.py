@@ -6,6 +6,8 @@ import mlflow
 if __name__ == "__main__":
     os.environ['AWS_ACCESS_KEY_ID'] = "admin"
     os.environ['AWS_SECRET_ACCESS_KEY'] = "sample_key"
+    os.environ['MLFLOW_TRACKING_USERNAME'] = "mlflow"
+    os.environ['MLFLOW_TRACKING_PASSWORD'] = "mlflow"
     os.environ['MLFLOW_S3_ENDPOINT_URL'] = "http://10.2.10.159:9000"
 
     mlflow.set_tracking_uri('http://10.2.10.159:5000')
